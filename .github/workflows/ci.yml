@@ -58,7 +58,7 @@ jobs:
       # Paso 6: Build de la imagen Docker
       - name: Build Docker Image
         run: |
-          docker build -t ghcr.io/ByronMenjivar/xmlapi/xmlapi:latest .
+          docker build -t ghcr.io/byronmenjivar/xmlapi/xmlapi:latest .
 
       # Paso 7: Login en GitHub Container Registry
       - name: Docker Login to GHCR
@@ -68,7 +68,7 @@ jobs:
       # Paso 8: Subida de la imagen Docker a GHCR
       - name: Push Docker Image
         run: |
-          docker push ghcr.io/ByronMenjivar/xmlapi/xmlapi:latest
+          docker push ghcr.io/byronmenjivar/xmlapi/xmlapi:latest
 
       #CD
 
